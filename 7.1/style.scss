@@ -1,6 +1,9 @@
 @import "./utils/variables.scss";
+@import "./base/base.scss";
 
 
 h1 {
     color:$primary-color;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: black;
 }
