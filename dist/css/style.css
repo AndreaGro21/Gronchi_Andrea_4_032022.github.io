@@ -25,9 +25,88 @@ h1 {
   box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.025) inset;
   font-family: "Roboto", sans-serif;
   color: rgb(4, 4, 4);
-  font-size: 1.063rem;
+  font-size: 1.06rem;
   font-weight: 400;
 }
 .map-location span {
   margin-right: 10px;
+}
+
+.nav-explorer {
+  height: 287px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: rgb(4, 4, 4);
+  font-size: 1.06rem;
+  font-weight: 400;
+  background: #f7f7f7;
+}
+.nav-explorer h2 {
+  margin: 10px 30px;
+}
+.nav-explorer p {
+  font-family: "Roboto", sans-serif;
+  color: rgb(4, 4, 4);
+  font-size: 1.06rem;
+  font-weight: 400;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #353535;
+}
+.nav-explorer a {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  color: #fff;
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 1.06rem;
+  font-weight: 400;
+}
+
+.functioning__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.functioning__container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 72px;
+  background: #f7f7f7;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  color: black;
+}
+.functioning__container a span {
+  margin-right: 12px;
+  color: #7e7e7e;
+}
+.functioning__container a .container--number {
+  position: relative;
+  right: 51px;
+  width: 15px;
+  height: 15px;
+  background: #9356DC;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+}
+.functioning__container a .n-2 {
+  right: 56px;
+}
+
+i:last-child {
+  color: red;
 }
