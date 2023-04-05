@@ -22,10 +22,13 @@ span{
     height: 287px;
     @include flex-all;
     flex-direction: column;
+    padding: 5%;
+    text-align: center;
 @include textset ($font-text, map-get($font-map , text));
 background: $bg-color2;
 h2{
     margin: 10px 30px;
+    
 }
 p{
 @include textset  ($font-text, map-get($font-map , text));
@@ -39,83 +42,76 @@ a{
     @include textset($font-text, map-get($font-map , text), #fff);
 }
 }
-
-
 .functioning{
 padding: 20px;
+height: 440px;
 box-sizing: border-box;
     
 &__container{
 @include flex-all();
 flex-direction: column;
 h3{ 
-    margin-right: 50%;
+    @include textset($font-text, map-get($font-map ,title), $fontwe:map-get($weight-map, bold));
+    margin-right: 44%;
     margin-left: auto;
+    padding: 30px 0;
 }
 a{
-    @include flex-all();
+    @include flex-all(left);
+    
     flex-basis: 1;
-
-    width: 300px;
+    width: 322px;
     height: 72px;
     background: #f7f7f7;
     margin-bottom: 16px;
     border-radius: 25px;
     box-shadow:0px 4px 15px rgba(0, 0, 0, 0.15); ;
     color: black;
-       
-    span{
-        width: 10px;
-        align-items: center;
-        margin-right: 10%;
-        color: #7e7e7e;
+        .fa-solid{
+            font-size:  18px;
+            width: 20px;
+            padding: 3px;
+            align-items: center;
+            text-align: center;
+        }
         .fa-store {
             color:$first-color;
         }
-        }
-        
-
         .container--number{
-           text-align: center;
-           position: relative;
-         left: -37px;
-            width: 15px;
-            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            translate: -50%;
+            left: 37px;
+            width: 24px;
+            height: 24px;
             background: $first-color;
             color: #fff;
-            font-size: 12px;
+            font-size: 14px;
             border-radius: 50%;
         }
-        
-        }
-}
-}
-
-
+        .container--text{
+        margin-left: 20px;
+}}}}
 main{
     width: 100%;
-    background: #d2d2d2;
+    background: #f6f6f6;
     @include flex-all ();
     flex-direction: column;
-    gap: 16px;
+    gap: 17px;
 padding: 50px 0;
-
 h3{
-
+    @include textset($font-text, map-get($font-map ,title), $fontwe:map-get($weight-map, bold));
     margin-right: auto;
     margin-left: 5%;
     margin-bottom: 10px;
-   
 }
-
 .cards{
-
     width: 90%;
     height: 251px;
     border-radius: 15px;
         & a{
                 width: 100%;
-               
                 cursor: pointer;
             .container--img{
                             width: 100%;
@@ -131,18 +127,17 @@ h3{
             }
 }
 }
-
 .newresto{
+    @include textset ($fontfa:$font-text,$fontsi:map-get($font-map, xs-text),$fontwe:map-get($weight-map, normal));
     position: relative;
-    left: 80%;
+    left: 75%;
     top: -90%;
 color: rgb(0, 0, 0);
 background: $third-color;
 width: fit-content;
-padding: 1px 4px;
+padding: 7px 12px;
 border-radius: 2px;
 }
-
 .--text{
 width: auto;
 height: 30%;
@@ -153,27 +148,43 @@ flex-direction: column;
 color: black;
 border-radius: 0 0 15px 15px;
 h4  {
-    margin: 7px 0 5px 10px;
+    margin: 11px 0 0px 10px;
    @include textset ($fontfa:$font-text,$fontsi:map-get($font-map, title-menu),$fontwe:map-get($weight-map, bold))
 }
 p{
     margin: 7px 0 5px 10px;
-    @include textset ($fontfa:$font-text,$fontsi:map-get($font-map, text-menu),$fontwe:map-get($weight-map, light))
+    @include textset (
+        $fontfa:$font-text,$fontsi:map-get($font-map, text-menu),
+        $fontwe:map-get($weight-map, light))
 }
 }
 button{
 position: relative;
 left: 87%;
 bottom: 20%;
-    font-size: 18px;
+    font-size: 22px;
     background: transparent;
    overflow:hidden;
-    width: 20px;
+    width: 23px;
 padding: 0;
     border: none;
+    &:focus{
+    
+        background: red;
+    
+    }
 }
 
 
+
+
+
+
+
+.-fa-fill{
+    background-color: blue;
+    background-size: contain;
+}
 
 footer{
 height: 186px;
