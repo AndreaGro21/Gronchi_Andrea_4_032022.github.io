@@ -2,5 +2,22 @@ $font-logo:'Shrikhand', cursive;
 $font-text:'Roboto', sans-serif;
 
 
-$font-map:(logo:1.875rem, title:1.5rem,
- text:1.06rem, title-menu:1.125rem ,text-menu:0.875 )
+$font-map:(
+logo:30px,
+ title:24px,
+ text:16px, 
+ title-menu:18px,
+ text-menu:17px,
+ sub-text:15px,
+ );
+
+ $weight-map:(
+
+light:300,
+normal:400,
+bold:700,
+
+
+
+
+ )

@@ -1,5 +1,4 @@
 * {
-  text-align: center;
   margin: 0;
   text-decoration: none;
 }
@@ -7,7 +6,7 @@
 h1 {
   font-family: "Shrikhand", cursive;
   color: rgb(4, 4, 4);
-  font-size: 1.875rem;
+  font-size: 30px;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -25,7 +24,7 @@ h1 {
   box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.025) inset;
   font-family: "Roboto", sans-serif;
   color: rgb(4, 4, 4);
-  font-size: 1.06rem;
+  font-size: 16px;
   font-weight: 400;
 }
 .map-location span {
@@ -40,7 +39,7 @@ h1 {
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   color: rgb(4, 4, 4);
-  font-size: 1.06rem;
+  font-size: 16px;
   font-weight: 400;
   background: #f7f7f7;
 }
@@ -50,7 +49,7 @@ h1 {
 .nav-explorer p {
   font-family: "Roboto", sans-serif;
   color: rgb(4, 4, 4);
-  font-size: 1.06rem;
+  font-size: 16px;
   font-weight: 400;
   font-weight: 300;
   margin-bottom: 20px;
@@ -68,34 +67,50 @@ h1 {
   justify-content: center;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  font-size: 1.06rem;
+  font-size: 16px;
   font-weight: 400;
 }
 
+.functioning {
+  padding: 20px;
+  box-sizing: border-box;
+}
 .functioning__container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+.functioning__container h3 {
+  margin-right: 50%;
+  margin-left: auto;
+}
 .functioning__container a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: 1;
   width: 300px;
   height: 72px;
   background: #f7f7f7;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   border-radius: 25px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   color: black;
 }
 .functioning__container a span {
-  margin-right: 12px;
+  width: 10px;
+  align-items: center;
+  margin-right: 10%;
   color: #7e7e7e;
 }
+.functioning__container a span .fa-store {
+  color: #9356DC;
+}
 .functioning__container a .container--number {
+  text-align: center;
   position: relative;
-  right: 51px;
+  left: -37px;
   width: 15px;
   height: 15px;
   background: #9356DC;
@@ -103,10 +118,117 @@ h1 {
   font-size: 12px;
   border-radius: 50%;
 }
-.functioning__container a .n-2 {
-  right: 56px;
+
+main {
+  width: 100%;
+  background: #d2d2d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 50px 0;
+}
+main h3 {
+  margin-right: auto;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+main .cards {
+  width: 90%;
+  height: 251px;
+  border-radius: 15px;
+}
+main .cards a {
+  width: 100%;
+  cursor: pointer;
+}
+main .cards a .container--img {
+  width: 100%;
+  height: 70%;
+}
+main .cards a .container--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
-i:last-child {
-  color: red;
+.newresto {
+  position: relative;
+  left: 80%;
+  top: -90%;
+  color: rgb(0, 0, 0);
+  background: #99E2D0;
+  width: fit-content;
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+.--text {
+  width: auto;
+  height: 30%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: black;
+  border-radius: 0 0 15px 15px;
+}
+.--text h4 {
+  margin: 7px 0 5px 10px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(4, 4, 4);
+  font-size: 18px;
+  font-weight: 700;
+}
+.--text p {
+  margin: 7px 0 5px 10px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(4, 4, 4);
+  font-size: 17px;
+  font-weight: 300;
+}
+
+button {
+  position: relative;
+  left: 87%;
+  bottom: 20%;
+  font-size: 18px;
+  background: transparent;
+  overflow: hidden;
+  width: 20px;
+  padding: 0;
+  border: none;
+}
+
+footer {
+  height: 186px;
+  background: black;
+  color: #fff;
+}
+footer table {
+  padding: 18px;
+}
+footer table th h4 {
+  text-align: left;
+  font-family: "Shrikhand", cursive;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+footer table td {
+  padding-bottom: 5px;
+}
+footer a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+}
+footer a span {
+  font-size: 13px;
+  margin-right: 15px;
 }
