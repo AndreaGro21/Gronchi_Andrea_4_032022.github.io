@@ -1,26 +1,20 @@
-$font-logo:'Shrikhand', cursive;
-$font-text:'Roboto', sans-serif;
+$font-logo: "Shrikhand", cursive;
+$font-text: "Roboto", sans-serif;
 
+$font-map: (
+  logo: 30px,
+  small-logo: 28px,
+  title: 24px,
+  title-menu: 18px,
+  text-menu: 17px,
+  text: 16px,
+  sub-text: 15px,
+  xs-text: 14px,
+);
 
-$font-map:(
-logo:30px,
-small-logo:28px,
- title:24px,
- title-menu:18px,
- text-menu:17px,
- text:16px, 
- sub-text:15px,
- xs-text:14px,
- );
-
- $weight-map:(
-
-light:300,
-normal:400,
-mi-bold:500,
-bold:700,
-
-
-
-
- )
+$weight-map: (
+  light: 300,
+  normal: 400,
+  mi-bold: 500,
+  bold: 700,
+);

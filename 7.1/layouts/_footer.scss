@@ -1,0 +1,33 @@
+footer {
+    background: black;
+    color: #fff;
+    .footer--container {
+      padding: 18px;
+       h4 {
+        text-align: left;
+        @include textset(
+          $fontfa: $font-logo,
+          $fontsi: map-get($font-map, title-menu),
+          $textcolor: rgb(255, 255, 255),
+          $fontwe: map-get($weight-map, normal)
+        );
+        padding-bottom: 10px;
+      }
+    }
+    a {
+      color: #fff;
+      @include flex-all(left);
+      @include textset(
+        $fontfa: $font-text,
+        $fontsi: map-get($font-map, text),
+        $textcolor: rgb(255, 255, 255),
+        $fontwe: map-get($weight-map, normal)
+      );
+      span {
+        font-size: 13px;
+        margin-right: 15px;
+        color: #fff;
+      }
+    }
+  }
+  

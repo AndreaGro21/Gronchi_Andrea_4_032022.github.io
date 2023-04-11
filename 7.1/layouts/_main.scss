@@ -1,0 +1,98 @@
+main {
+    width: 100%;
+  
+    background: #f6f6f6;
+    @include flex-all();
+    flex-direction: column;
+    gap: 17px;
+    padding: 50px 0;
+    h3 {
+      @include textset(
+        $font-text,
+        map-get($font-map, title),
+        $fontwe: map-get($weight-map, bold)
+      );
+      margin-right: auto;
+      margin-left: 5%;
+      margin-bottom: 10px;
+    }
+    .cards {
+      width: 90%;
+      height: 251px;
+      border-radius: 15px;
+      & a {
+        width: 100%;
+        cursor: pointer;
+        .container--img {
+          width: 100%;
+          height: 70%;
+  
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .newresto {
+    @include textset(
+      $fontfa: $font-text,
+      $fontsi: map-get($font-map, xs-text),
+      $fontwe: map-get($weight-map, normal)
+    );
+    position: relative;
+    left: 75%;
+    top: -90%;
+    color: rgb(0, 0, 0);
+    background: $third-color;
+    width: fit-content;
+    padding: 7px 12px;
+    border-radius: 2px;
+  }
+  .--text {
+    width: auto;
+    height: 30%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: black;
+    border-radius: 0 0 15px 15px;
+    h4 {
+      margin: 11px 0 0px 10px;
+      @include textset(
+        $fontfa: $font-text,
+        $fontsi: map-get($font-map, title-menu),
+        $fontwe: map-get($weight-map, bold)
+      );
+    }
+    p {
+      margin: 7px 0 5px 10px;
+      @include textset(
+        $fontfa: $font-text,
+        $fontsi: map-get($font-map, text-menu),
+        $fontwe: map-get($weight-map, light)
+      );
+    }
+  }
+  .heart-like {
+    position: relative;
+    left: 87%;
+    bottom: 20%;
+    font-size: 22px;
+    background: transparent;
+    overflow: hidden;
+    width: 23px;
+    padding: 0;
+    border: none;
+    &:focus {
+      background: red;
+    }
+  }
+  .-fa-fill {
+    background-color: blue;
+    background-size: contain;
+  }

@@ -1,0 +1,99 @@
+h1 {
+    @include textset($font-logo, map-get($font-map, logo));
+    @include flex-all;
+    height: 63px;
+    border-bottom: 1px solid black;
+  }
+  .map-location {
+    height: 50px;
+    background: $bg-color;
+    @include flex-all();
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.025) inset;
+    @include textset($font-text, map-get($font-map, text));
+    span {
+      margin-right: 10px;
+    }
+  }
+  .nav-explorer {
+    height: 287px;
+    @include flex-all;
+    flex-direction: column;
+    padding: 5%;
+    text-align: center;
+    @include textset($font-text, map-get($font-map, text));
+    background: $bg-color2;
+  
+    h2 {
+      margin: 10px 30px;
+    }
+  
+    p {
+      @include textset($font-text, map-get($font-map, text));
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: #353535;
+    }
+    a {
+      @include btn;
+      @include flex-all;
+      @include textset($font-text, map-get($font-map, text), #fff);
+    }
+  }
+  .functioning {
+    padding: 20px;
+    height: 440px;
+    box-sizing: border-box;
+  
+    &__container {
+      @include flex-all();
+      flex-direction: column;
+      h3 {
+        @include textset(
+          $font-text,
+          map-get($font-map, title),
+          $fontwe: map-get($weight-map, bold)
+        );
+        margin-right: 44%;
+        margin-left: auto;
+        padding: 30px 0;
+      }
+      a {
+        @include flex-all(left);
+  
+        flex-basis: 1;
+        width: 322px;
+        height: 72px;
+        background: #f7f7f7;
+        margin-bottom: 16px;
+        border-radius: 25px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        color: black;
+        .fa-solid {
+          font-size: 18px;
+          width: 20px;
+          padding: 3px;
+          align-items: center;
+          text-align: center;
+        }
+        .fa-store {
+          color: $first-color;
+        }
+        .container--number {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          translate: -50%;
+          left: 37px;
+          width: 24px;
+          height: 24px;
+          background: $first-color;
+          color: #fff;
+          font-size: 14px;
+          border-radius: 50%;
+        }
+        .container--text {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
