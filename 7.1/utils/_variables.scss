@@ -1,10 +1,13 @@
-$first-color: #9356DC;
-$second-color:#FF79DA;
+$first-color: hsl(267, 66%, 60%);
+$second-color:hsl(317, 100%, 74%);
 $third-color:#99E2D0;
 $bg-color:#eaeaea;
 $bg-color2:#f7f7f7;
 
-$button-color: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgb(255, 121, 218, 1)
+$button-color: linear-gradient(0deg, $first-color 0%, $second-color
+100%);
+
+$button-color-hover: linear-gradient(0deg, hsl(267, 66%, 62%) 0%, hsl(317, 100%, 78%)
 100%);
 
 
