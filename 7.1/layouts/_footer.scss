@@ -1,6 +1,7 @@
 footer {
     background: black;
     color: #fff;
+    padding-top: 50px;
     .footer--container {
       padding: 18px;
        h4 {
@@ -31,3 +32,28 @@ footer {
     }
   }
   
+  
+  @media screen and (min-width: 768px){
+
+
+    .footer--container{
+
+
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+     
+      a{
+     h4{
+      padding-bottom: 0;
+      padding: 0 10px 0 50px;
+     }
+    }
+      .--link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+  }
