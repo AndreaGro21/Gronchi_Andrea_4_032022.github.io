@@ -32,7 +32,7 @@ body {
   z-index: -1;
 }
 
-main {
+.main {
   position: relative;
   z-index: 1;
   display: flex;
