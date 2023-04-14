@@ -13,7 +13,7 @@
     );
     margin-right: auto;
     margin-left: 5%;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
   }
   .cards {
     position: relative;
@@ -90,8 +90,10 @@ font-size: 22px;
 width: 30px;
 padding: 0%;
 }
+
 #full-heart {
   position: absolute;
+  top: 0.5px;
   z-index: 0;
   opacity: 0;
   color: #9c47fc;
@@ -100,12 +102,8 @@ padding: 0%;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
- 
-  
   &:hover{
-    animation: slowly 1s forwards;
-  
+    animation: slowly 0.1s forwards;
     opacity: 1;
   }
 }
@@ -113,6 +111,7 @@ padding: 0%;
 @keyframes slowly {
   from {
     opacity: 0;
+    transform-origin: center;
   }
   to {
     opacity: 1;
