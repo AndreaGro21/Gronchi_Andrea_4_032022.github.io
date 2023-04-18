@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #f6f6f6;
+  font-family: "Roboto", sans-serif;
 }
 
 .link-arrow {
@@ -49,21 +49,21 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.menu--list .__title {
+.menu--list__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
   gap: 45px;
 }
-.menu--list .__title .heart-like-menus {
+.menu--list__title-hearts {
   position: relative;
   background: none;
   border: none;
   width: 30px;
   padding: 0%;
 }
-.menu--list .__title .heart-like-menus #full-heart {
+.menu--list__title-hearts #full-heart {
   position: absolute;
   font-size: 28.5px;
   z-index: 0;
@@ -75,17 +75,17 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu--list .__title .heart-like-menus #full-heart:hover {
+.menu--list__title-hearts #full-heart:hover {
   animation: slowly 0.1s forwards;
   opacity: 1;
 }
-.menu--list .__title h2 {
+.menu--list__title h2 {
   font-family: "Shrikhand", cursive;
   color: rgb(4, 4, 4);
   font-size: 28px;
   font-weight: 400;
 }
-.menu--list .__title i {
+.menu--list__title i {
   font-size: 28px;
 }
 
@@ -113,7 +113,7 @@ body {
   bottom: 0;
   border-bottom: 3px solid #99e2d0;
 }
-.menus .--container {
+.menus--container {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   display: flex;
   width: 349px;
@@ -126,11 +126,25 @@ body {
   animation: animate-menus 1.5s forwards;
   border: none;
 }
-.menus .--container .__text {
+.menus--container:hover {
+  transition: margin-right 1s;
+}
+.menus--container:hover > .menus--container__selected {
+  width: 20%;
+  margin-right: 0%;
+  border: #99e2d0;
+  transition: width 1s;
+  transition: margin-right 1s;
+  cursor: pointer;
+}
+.menus--container__text {
   width: 100%;
   padding: 10px 0px 10px 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menus .--container .__selected {
+.menus--container__selected {
   margin-right: -20%;
   width: 0%;
   height: 100%;
@@ -143,31 +157,18 @@ body {
   transition: margin-right 1s;
   border: #99e2d0;
 }
-.menus .--container .__selected:active > i {
+.menus--container__selected:active > i {
   background-color: white;
-  font-size: 22px;
-  padding: 1;
+  transform: scale(1.2);
+  box-sizing: border-box;
 }
-.menus .--container .__selected i {
+.menus--container__selected i {
   background: #fff;
   border-radius: 50%;
   font-size: 17px;
   padding: 3px;
 }
-.menus .--container:hover .__text {
-  width: 80%;
-  transition: margin-right 1s;
-  transition: width 1s;
-}
-.menus .--container:hover .__selected {
-  width: 20%;
-  margin-right: 0%;
-  border: #99e2d0;
-  transition: width 1s;
-  transition: margin-right 1s;
-  cursor: pointer;
-}
-.menus .--container h4 {
+.menus h4 {
   font-family: "Roboto", sans-serif;
   color: rgb(4, 4, 4);
   font-size: 18px;
@@ -175,7 +176,7 @@ body {
   font-style: normal;
   padding-bottom: 5px;
 }
-.menus .--container .sub-menu {
+.menus--sub-menu {
   font-family: "Roboto", sans-serif;
   color: rgb(4, 4, 4);
   font-size: 15px;
@@ -185,12 +186,12 @@ body {
   width: 95%;
   margin: 0;
 }
-.menus .--container .value {
+.menus--value {
   font-weight: 700;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
-.sub-menu > p {
+.menus--sub-menu > p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -212,10 +213,12 @@ body {
   width: 186px;
   margin-top: 50px;
   align-self: center;
+  transition: all 0.5s;
 }
 #btn-commande:hover {
   background: linear-gradient(0deg, hsl(267, 66%, 62%) 0%, hsl(317, 100%, 78%) 100%);
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
 }
 
 .menus .--container:nth-child(2) {
@@ -255,15 +258,15 @@ body {
 }
 
 .menus .--container:nth-child(11) {
-  animation-delay: 0.9s;
+  animation-delay: 0.1s;
 }
 
 .menus .--container:nth-child(12) {
-  animation-delay: 0.9s;
+  animation-delay: 0.1s;
 }
 
 .menus .--container:nth-child(13) {
-  animation-delay: 0.9s;
+  animation-delay: 1.1s;
 }
 
 @keyframes animate-menus {
@@ -292,7 +295,6 @@ h1 {
   align-items: center;
   justify-content: center;
   height: 63px;
-  border-bottom: 1px solid black;
 }
 
 .map-location {
@@ -348,10 +350,12 @@ h1 {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+  transition: all 0.5s;
 }
 .nav-explorer a:hover {
   background: linear-gradient(0deg, hsl(267, 66%, 62%) 0%, hsl(317, 100%, 78%) 100%);
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
 }
 
 .functioning {
@@ -412,7 +416,6 @@ h1 {
   width: 24px;
   height: 24px;
   background: #9256dc;
-  color: #fff;
   font-size: 14px;
   border-radius: 50%;
   font-family: "Roboto", sans-serif;
@@ -645,7 +648,7 @@ h1 {
   padding: 0%;
 }
 
-#full-heart {
+.full-heart {
   position: absolute;
   top: 0.5px;
   z-index: 0;
@@ -656,12 +659,14 @@ h1 {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: opacity 0.1s;
 }
-#full-heart:hover {
-  animation: slowly 0.1s forwards;
+.full-heart:hover {
   opacity: 1;
 }
-
+.full-heart:hover + .empty-heart {
+  visibility: hidden;
+}
 @keyframes slowly {
   from {
     opacity: 0;
@@ -672,10 +677,10 @@ h1 {
   }
 }
 @media screen and (min-width: 768px) {
-  body {
+  .full-heart body {
     background: white;
   }
-  #main {
+  .full-heart #main {
     display: grid;
     box-sizing: border-box;
     padding: 0 5%;
@@ -686,10 +691,11 @@ h1 {
     align-items: center;
     justify-items: center;
   }
-  #main h3 {
+  .full-heart #main h3 {
     display: block;
   }
 }
+
 footer {
   background: #353535;
   color: #fff;
@@ -732,7 +738,7 @@ footer a span {
     padding-bottom: 0;
     padding: 0 10px 0 50px;
   }
-  .footer--container .--link {
+  .footer--container__link {
     display: flex;
     flex-direction: row;
     align-items: center;
