@@ -286,6 +286,21 @@ body {
   .menu--list {
     width: 80%;
   }
+  .footer--container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .footer--container a h4 {
+    padding-bottom: 0;
+    padding: 0 10px 0 50px;
+  }
+  .footer--container__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
 }
 h1 {
   font-family: "Shrikhand", cursive;
