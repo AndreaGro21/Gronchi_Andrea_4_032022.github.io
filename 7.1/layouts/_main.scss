@@ -43,9 +43,9 @@
     $fontsi: map-get($font-map, xs-text),
     $fontwe: map-get($weight-map, normal)
   );
-  position: relative;
-  left: 75%;
-  top: -90%;
+  position: absolute;
+  right: 12px;
+  top: 10px;
   color: rgb(0, 0, 0);
   background: $third-color;
   width: fit-content;
@@ -79,7 +79,7 @@
   }
 }
 
-.heart-like {
+  .heart-like {
   background: none;
   border: none;
   position: absolute;
@@ -88,9 +88,9 @@
   font-size: 22px;
   width: 30px;
   padding: 0%;
-}
+  }
 
-.full-heart {
+  .full-heart {
   position: absolute;
   top: 0.5px;
   z-index: 0;
@@ -108,9 +108,9 @@
     + .empty-heart {
       visibility: hidden;
   }
+  }
 }
-
-@keyframes slowly {
+  @keyframes slowly {
   from {
     opacity: 0;
     transform-origin: center;
@@ -118,12 +118,9 @@
   to {
     opacity: 1;
   }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    background: white;
   }
+
+  @media screen and (min-width: 768px) {
   #main {
     display: grid;
     box-sizing: border-box;
@@ -138,6 +135,9 @@
     h3 {
       display: block;
     }
+    .newresto{
+      right: 12px;
+      top: 10px;
+    }
   }
-}
-}
+  }
