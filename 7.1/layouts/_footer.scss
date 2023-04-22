@@ -1,7 +1,7 @@
 footer {
     background: #353535;
     color: #fff;
-    padding-top: 50px;
+    
     .footer--container {
       padding: 18px;
        h4 {
@@ -16,6 +16,7 @@ footer {
       }
     }
     a {
+      padding: 2px 0;
       color: #fff;
       @include flex-all(left);
       @include textset(
