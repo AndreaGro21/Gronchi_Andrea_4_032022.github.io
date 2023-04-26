@@ -11,7 +11,8 @@
   $fontsi: map-get($font-map, ""),
   $textcolor: rgb(4, 4, 4),
   $fontwe: map-get($weight-map, normal)
-) {
+) 
+{
   font-family: $fontfa;
   color: $textcolor;
   font-size: $fontsi;
